@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;600;700;800&display=swap');
+/*
+ * Author: Mangesh Bhongale
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik';
+}
+
+html {
+  width: 100%;
+  height: 100%;
+
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+body {
+  min-height: 100vh;
+  /* Change to min-height for responsiveness */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  /* background-color: #f5f5f5; */
+  background-color: #f4f6fb;
+}
+
+.signup-container {
+  max-width: 1000px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.signup-container .title {
+  width: auto;
+  height: 10%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.signup-container .title h1 {
+  font-size: 32px;
+}
+
+.signup-container .title img {
+  width: 120px;
+  height: 50px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.form-field {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.form-field:last-child {
+  margin-right: 0;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-field input, .form-field select {
+  width: 100%;
+  padding: 5px;
+}
+
+.form-group {
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #c9c7c7;
+}
+
+.form-group h3 {
+  margin-bottom: 10px;
+}
+
+.form-group select {
+  width: 100%;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background-image: url(/images/icons/calendar.png);
+  background-size: contain;
+}
+
+.swal2-popup * {
+  font-size: 15px !important;
+}
+
+.swal-button {
+  background-color: #fe0466;
+  width: 100px !important;
+  height: 100px !important;
+}
+
+.swal2-close {
+  width: 50px;
+  height: 50px;
+}
+
+
+
+form .gender-details .gender-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+form .category {
+  display: flex;
+  width: 80%;
+  margin: 14px 0;
+  justify-content: space-between;
+}
+
+form .category label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+form .category label .dot {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+
+#dot-1:checked~.category label .one,
+#dot-2:checked~.category label .two,
+#dot-3:checked~.category label .three {
+  background: #9b59b6;
+  border-color: #d9d9d9;
+}
+
+form input[type="radio"] {
+  display: none;
+}
+
+form .button {
+  height: 45px;
+  margin: 35px 0;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.input {
+  max-width: 190px;
+  background-color: #f5f5f5;
+  color: #242424;
+  padding: .15rem .5rem;
+  min-height: 40px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  line-height: 1.15;
+  box-shadow: 0px 10px 20px -18px;
+}
+
+
+.form-group .UG-PG
+{
+margin-top: 10px;
+}
+.form-group p
+{
+  font-size: 12px;
+}
+
+form .button input {
+  height: 100%;
+  width: 40%;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  background-color: #fe0466;
+}
+
+form .button input:hover {
+  background-color:#000;
+}
+.custom-file-label::after {
+  content: "Change Label"; /* Change this text to what you want */
+  display: inline-block;
+  background-color: #007bff; /* Change the button background color as needed */
+  color: #fff; /* Change the button text color as needed */
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Style to hide the actual input field */
+
+.form-field #UG-docs
+{
+margin-top: 0px;
+}
+
+input[type="file"]
+{
+
+  height: 40px;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="phone"],
+input[type="radio"]
+
+{
+
+  height: 40px;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+}
+
+
+select {
+  height: 40px;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  background-color: white; /* Background color for the select box */
+  color: #333; /* Text color for the select box */
+}
+
+/* Remove default select arrow */
+select::-ms-expand {
+  display: none;
+}
+
+/* Style select when it's focused */
+select:focus {
+  border-color: #000; /* Change border color when focused */
+  outline: none; /* Remove the default focus outline */
+  border: 2px solid #000;
+}
+@media (max-width: 584px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .container .title {
+    flex-direction: column-reverse;
+  }
+
+  form .user-details .input-box {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  form .category {
+    width: 100%;
+  }
+
+  .content form .user-details {
+    max-height: none;
+    /* Remove max-height for better mobile display */
+    overflow-y: initial;
+    /* Remove scrolling for better mobile display */
+  }
+
+  .user-details::-webkit-scrollbar {
+    width: 0;
+    /* Remove scrollbar for better mobile display */
+  }
+}
+
+@media (max-width: 459px) {
+  .container .content .category {
+    flex-direction: column;
+  }
+}
+
+.swal2-title {
+    font-size: 20px !important;  /* Adjust this value as needed */
+}
+/* Reducing the font size for the button */
+.swal2-confirm {
+    font-size: 14px !important;  /* Adjust this value as needed */
+    padding: 4px 8px;
+    }
+    
+::placeholder {
+  color: grey; /* Light grey color for placeholder text */
+  font-size: 15px;
+  font-weight: 500;
+  font-family: 'Poppins';
+}
+
+
+
+/*This is for The Edit Page of Employee*/
+
+.btn{
+	display: inline-block;
+    padding: 6px 12px;
+    margin-right: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    text-decoration: none;
+}
+

@@ -1,0 +1,391 @@
+/*
+ * Author: Mangesh Bhongale
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+ 
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+    font-family: 'Rubik';
+ }
+ 
+ :root {
+     --primary-color: #f90a39;
+     --text-color: #1d1d1d;
+     --bg-color: #f1f1fb;
+ }
+ 
+ html,
+ body {
+     width: 100%;
+     height: 100%;
+     margin: 0;
+     padding: 0;
+     background-color: #f4f6fb;
+ }
+ 
+ a {
+     text-decoration: none;
+ }
+ 
+ li {
+     list-style: none;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ .dashmain {
+     margin-left: 18%;
+     /* to avoid overlapping with the sidebar */
+     width: 82%;
+     height: auto;
+     /* changed from 100% to auto to allow it to grow with its content */
+     background-color: #f4f6fb;
+     display: flex;
+     align-items: center;
+     justify-content: flex-start;
+     flex-direction: column;
+     gap: 1rem;
+     overflow: auto;
+     /* to make the dashmain part scrollable */
+     padding-bottom: 20px;
+     /* a little padding at the bottom for breathing room */
+ }
+ 
+ .dashmain .header {
+     width: 100%;
+     height: 10vh;
+     background-color: #fff;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     border-bottom: 1px solid #ccc;
+ }
+ 
+ .header .righttop {
+ 
+     display: flex;
+     width: auto;
+     height: 10%;
+     gap: 2rem;
+ }
+ 
+ 
+ .container {
+     max-width: 90%;
+     width: 100%;
+     background-color: #fff;
+     padding: 25px 30px;
+     border-radius: 5px;
+     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+ }
+ 
+ .container .title {
+     width: auto;
+     height: 10%;
+     position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+ 
+ .container .title h1 {
+     font-size: 20px;
+ }
+ 
+ .container .title img {
+     width: 100px;
+     height: 40px;
+ }
+ 
+ 
+ 
+ .content form .user-details {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     margin: 20px 0 12px 0;
+ }
+ 
+ form .user-details .input-box {
+     margin-bottom: 15px;
+     width: calc(100% / 2 - 20px);
+ }
+ 
+ form .input-box span.details {
+     display: block;
+     font-weight: 500;
+     margin-bottom: 5px;
+     font-size: 14px;
+ }
+ 
+ .user-details .input-box input {
+     height: 45px;
+     width: 100%;
+     outline: none;
+     font-size: 14px;
+     border-radius: 5px;
+     padding-left: 15px;
+     border: 1px solid #ccc;
+     
+ }
+ 
+ .user-details .input-box input:focus,
+ .user-details .input-box input:valid {
+     border: 2px solid black;
+ }
+ 
+ .swal2-popup * {
+     font-size: 15px !important;
+ }
+ 
+ .swal-button {
+     background-color: #fe0466;
+     width: 100px !important;
+     height: 100px !important;
+ }
+ 
+ .swal2-close {
+     width: 50px;
+     height: 50px;
+ }
+ 
+ form .category {
+     display: flex;
+     width: 80%;
+     margin: 14px 0;
+     justify-content: space-between;
+ }
+ 
+ form .category label {
+     display: flex;
+     align-items: center;
+     cursor: pointer;
+ }
+ 
+ form .category label .dot {
+     height: 18px;
+     width: 18px;
+     border-radius: 50%;
+     margin-right: 10px;
+     background: #d9d9d9;
+     border: 5px solid transparent;
+     transition: all 0.3s ease;
+ }
+ 
+ 
+ 
+ form .button {
+     height: 45px;
+     margin: 35px 0;
+ }
+ 
+ form .button input {
+     height: 100%;
+     width: 100%;
+     border-radius: 5px;
+     border: none;
+     color: #fff;
+     font-size: 18px;
+     font-weight: 500;
+     letter-spacing: 1px;
+     cursor: pointer;
+     transition: all 0.3s ease;
+     background-color: #1d1a3d;
+ }
+ 
+ form .button input:hover {
+     background-color: #000;
+ }
+ 
+ .input {
+     max-width: 190px;
+     background-color: #f5f5f5;
+     color: #242424;
+     padding: .15rem .5rem;
+     min-height: 40px;
+     border-radius: 4px;
+     outline: none;
+     border: none;
+     line-height: 1.15;
+     box-shadow: 0px 10px 20px -18px;
+ }
+ 
+ input:focus {
+     border-bottom: 2px solid #5b5fc7;
+     border-radius: 4px 4px 2px 2px;
+ }
+ 
+ input:hover {
+     outline: 1px solid lightgrey;
+ }
+ 
+ /* Add this CSS code for styling the file input */
+ .user-details .input-box input[type="file"] {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 10px;
+ }
+ .swal2-title {
+     font-size: 18px !important;  /* Adjust this value as needed */
+ }
+ .swal2-close {
+     font-size: 30px !important;   /* Adjust as per your preference */
+     line-height: 30px !important; /* Adjust this as well if you change font-size */
+    
+ }
+ 
+ 
+ 
+ @media (max-width: 584px) {
+     .container {
+         max-width: 100%;
+     }
+ 
+     .container .title {
+         flex-direction: column-reverse;
+     }
+ 
+     form .user-details .input-box {
+         margin-bottom: 15px;
+         width: 100%;
+     }
+ 
+     form .category {
+         width: 100%;
+     }
+ 
+     .content form .user-details {
+         max-height: none;
+         /* Remove max-height for better mobile display */
+         overflow-y: initial;
+         /* Remove scrolling for better mobile display */
+     }
+ 
+     .user-details::-webkit-scrollbar {
+         width: 0;
+         /* Remove scrollbar for better mobile display */
+     }
+ }
+ 
+ @media (max-width: 459px) {
+     .container .content .category {
+         flex-direction: column;
+     }
+ }
+ 
+ 
+ #togglebutton {
+    background-color: #1d1a3d; /* A different color to distinguish between buttons */
+     color: white;
+    width: 300px;
+    height: 40px;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     font-size: 16px;
+     transition: background-color 0.3s;
+ }
+ 
+ #togglebutton:hover {
+     background-color: #180f27; /* Slightly darker shade for hover effect */
+ }
+ #leaveToggle {
+     background-color: #2ecc71; /* A different color to distinguish between buttons */
+     color: white;
+     width: 300px;
+     height: 40px;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     font-size: 16px;
+     transition: background-color 0.3s;
+ }
+ 
+ #leaveToggle:hover {
+     background-color: #27ae60; /* Slightly darker shade for hover effect */
+ }
+ 
+ .leaveshistory{
+    width: 90%;
+    height: 100vh;
+   
+ }
+ .leaveTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    text-align: left;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.leaveTable thead {
+    background-color: #1d1a3d;
+    color: white;
+}
+
+.leaveTable th,
+.leaveTable td {
+    padding: 12px 12px;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+.buttonc{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	gap: 10px;
+}
+.approve,.reject {
+    display: flex;
+    align-items: center;
+    font-family: 'Rubik';
+    justify-content: center;
+   width: 80px;
+   height: 35px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.approve{
+	background-color: #2ecc71;
+}
+.reject{
+	background-color: crimson;
+}
+
+.approve:hover {
+    scale: 1.05;
+}
+.reject:hover {
+    scale: 1.05;
+}
+.leaveTable tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.leaveTable tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.leaveTable tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.leaveTable tbody tr:hover {
+    background-color: #f5f5f5;
+}

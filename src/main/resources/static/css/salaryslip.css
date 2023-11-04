@@ -1,0 +1,434 @@
+/*
+ * Author: Mangesh Bhongale
+ */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik';
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6fb;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    font-size: 15px !important;
+}
+
+#downloadBtn{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+
+.slip-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 1%;
+
+}
+
+.slip-container .slip-box {
+    padding: 20px;
+    width: 65%;
+    height: 95%;
+    background-color: #fff;
+    filter: drop-shadow(5px 5px 10px #cecccc);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    overflow: auto;
+
+}
+
+.slip-box .slip-header {
+    width: 95%;
+    height: 15%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+
+}
+
+.slip-header .left-h-slip {
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    row-gap: 5px;
+}
+
+.left-h-slip p {
+    font-size: 12px;
+}
+
+.slip-header .center-h-slip {
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.center-h-slip img {
+    width: 100px;
+    height: 40px;
+}
+
+.slip-header .right-h-slip {
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    row-gap: 5px;
+}
+
+.slip-box .hr-line {
+    margin-bottom: 10px;
+    width: 95%;
+    height: 1px;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23333' stroke-width='3' stroke-dasharray='6%2c10' stroke-dashoffset='0' stroke-linecap='round'/%3e%3c/svg%3e");
+}
+
+.slip-box .slip-emp-info {
+    width: 95%;
+    height: 30%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.slip-emp-info .employeeinfo {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    
+
+}
+
+.employeeinfo .name-container,
+.employeeinfo .empid-conainer,
+.employeeinfo .payperiod,
+.employeeinfo .paydate {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.employeeinfo .name-container p,
+.employeeinfo .empid-conainer p,
+.employeeinfo .payperiod p,
+.employeeinfo .paydate p {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.employeeinfo .name-container .colon,
+.employeeinfo .empid-conainer .colon,
+.employeeinfo .payperiod .colon,
+.employeeinfo .paydate .colon {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.employeeinfo .name-container h4,
+.employeeinfo .empid-conainer h4,
+.employeeinfo .payperiod h4,
+.employeeinfo .paydate h4 {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-family: 'Rubik';
+    font-weight: 600;
+}
+
+.slip-emp-info .salary-highlight {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+
+.salary-highlight .salary {
+    width: 80%;
+    height: 100%;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+
+}
+
+.salary .hr {
+    width: 80%;
+    height: 1px;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23333' stroke-width='3' stroke-dasharray='6%2c10' stroke-dashoffset='0' stroke-linecap='round'/%3e%3c/svg%3e");
+}
+
+
+.salary .salary-amount {
+    width: 80%;
+    height: 40%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2px;
+
+
+
+}
+
+.salary-amount h2 {
+    font-family: 'Rubik';
+}
+
+.salary-amount p {
+    font-family: 'Rubik';
+    font-size: 10px;
+}
+
+.salary-amount i {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.salary .salary-days {
+    width: 80%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.salary-days .paiddays,
+.salary-days .extradays,
+.salary-days .halfday {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+
+
+}
+
+.salary-days .paiddays h4,
+.salary-days .extradays h4,
+.salary-days .halfday h4 {
+    font-family: 'Rubik';
+    width: 30%;
+}
+.salary-days .paiddays p,
+.salary-days .extradays p,
+.salary-days .halfday p  {
+    font-family: 'Rubik';
+    width: 80%;
+}
+
+.slip-box .earning-details-cont {
+    width: 96%;
+    height: 35%;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.earning-details-cont .left-earnign-cont {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1% 0;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.left-earnign-cont .left-earning-header {
+    width: 95%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-earnign-cont .hr {
+    width: 95%;
+    height: 1px;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23333' stroke-width='3' stroke-dasharray='6%2c10' stroke-dashoffset='0' stroke-linecap='round'/%3e%3c/svg%3e");
+}
+
+.left-earnign-cont .left-earning-body {
+    width: 95%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.left-earning-body .left-first-body,
+.left-earning-body .left-second-body {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-earnign-cont .left-earning-total {
+    width: 95%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-earning-total .left-total-body {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.earning-details-cont .right-earnign-cont {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 1%;
+    gap: 20px;
+}
+
+.right-earnign-cont .right-earning-header {
+    width: 95%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right-earnign-cont .hr {
+    width: 95%;
+    height: 1px;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23333' stroke-width='3' stroke-dasharray='6%2c10' stroke-dashoffset='0' stroke-linecap='round'/%3e%3c/svg%3e");
+}
+
+.right-earnign-cont .right-earning-body {
+    width: 95%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.right-earning-body .right-first-body,
+.right-earning-body .right-second-body {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right-earnign-cont .right-earning-total {
+    width: 95%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-earning-total .right-total-body {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.slip-box .total-net-payble{
+    width: 96%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.total-net-payble .left-total-net{
+    width: 85%;
+    height: auto;
+   padding: 10px;
+}
+.total-net-payble .right-total-net{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgreen;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}

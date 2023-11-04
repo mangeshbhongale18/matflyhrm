@@ -1,0 +1,434 @@
+/*
+ * Author: Mangesh Bhongale
+ */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik';
+}
+
+:root {
+    --primary-color: #f90a39;
+    --text-color: #1d1d1d;
+    --bg-color: #f1f1fb;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6fb;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+.dashmain {
+    margin-left: 18%;
+    /* to avoid overlapping with the sidebar */
+    width: 82%;
+    height: auto;
+    /* changed from 100% to auto to allow it to grow with its content */
+    background-color: #f4f6fb;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+    overflow: auto;
+    /* to make the dashmain part scrollable */
+    padding-bottom: 20px;
+    /* a little padding at the bottom for breathing room */
+}
+
+.dashmain .header {
+    width: 100%;
+    height: 10vh;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #ccc;
+}
+
+.header .righttop {
+
+    display: flex;
+    width: auto;
+    height: 10%;
+    gap: 2rem;
+}
+
+.days-container{
+    width: 95%;
+    height: 120px;
+    margin: 0 auto;
+    padding: 10px 30px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
+   
+}
+
+.days-container  form{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: transparent;
+    box-shadow: none;
+    height: auto;
+    margin: 0;
+    padding: 0;
+   
+    
+    
+}
+.days-container form .day-count{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.day-count h4{
+    font-family: 'Rubik';
+}
+.day-count .number{
+    color: red;
+}
+
+.attendance-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+   
+    margin-top: 20px;
+
+}
+
+form {
+    width: 95%;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+    /* Center the form content */
+}
+
+.form-field {
+    display: inline-grid;
+    width: 22%;
+    margin-left: 20px;
+    text-align: left;
+    /* Align form fields to the left */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    /* Make labels bold for better readability */
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    /* Add some space between form fields */
+}
+
+input[type="submit"] {
+    background-color: #1d1a3d;
+    color: #fff;
+    padding: 15px 25px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    margin: 20px auto;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+    font-size: 15px;
+    /* Add a smooth transition effect */
+}
+
+input[type="submit"]:hover {
+    background-color: #000;
+    /* Change background color on hover */
+}
+
+@media screen and (max-width: 480px) {
+    .form-field {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        margin-bottom: 10px;
+        text-align: left;
+        /* Align form fields to the left on smaller screens */
+    }
+}
+
+
+
+
+.wrapper {
+    width: 95%;
+    height: 600px;
+    max-height: 700px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper header {
+    display: flex;
+    align-items: center;
+    padding: 25px 30px 10px;
+    justify-content: space-between;
+}
+
+.wrapper header .colorindiacator {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.wrapper header .colorindiacator p {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+header .icons {
+    display: flex;
+}
+
+header .icons span {
+    height: 38px;
+    width: 38px;
+    margin: 0 1px;
+    cursor: pointer;
+    color: #fe0466;
+    text-align: center;
+    line-height: 38px;
+    font-size: 1.9rem;
+    user-select: none;
+    border-radius: 50%;
+}
+
+.icons span:last-child {
+    margin-right: -10px;
+}
+
+header .icons span:hover {
+    background: #f2f2f2;
+}
+
+header .current-date {
+    font-size: 1.45rem;
+    font-weight: 500;
+}
+
+.calendar {
+    padding: 20px;
+}
+
+.calendar ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+}
+
+.calendar .days {
+    margin-bottom: 20px;
+}
+
+.calendar li {
+    color: #333;
+    width: calc(100% / 7);
+    font-size: 1.07rem;
+}
+
+.calendar .weeks li {
+    font-weight: 500;
+    cursor: default;
+}
+
+.calendar .days li {
+    z-index: 1;
+    cursor: pointer;
+    position: relative;
+    padding: 30px 10px;
+    border-radius: 20px;
+    font-family: 'Rubik';
+    font-weight: 300;
+    color: #1d1d1d;
+}
+
+.calendar .days li::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+}
+
+.days li.inactive {
+    color: #aaa;
+}
+
+.days li.active {
+    font-weight: 600;
+}
+
+.days li.active::after {
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    border: 2px solid black;
+    border-radius: 15px;
+    z-index: -1;
+}
+
+
+.days li:hover::after,
+.days li.holiday::after,
+.days li.present::after,
+.days li.absent::after,
+.days li.weekoff::after,
+.days li.holiday::after,
+.days li.halfday::after {
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    border-radius: 15px;
+    z-index: -1;
+}
+
+.days li:hover::after {
+    background-color: #ece7e7;
+}
+
+.days li.holiday::after {
+    background-color: #11035b;
+}
+
+.days li.present,
+.days li.absent,
+.days li.weekoff,
+.days li.holiday, 
+.days li.halfday {
+    color: #fff;
+}
+ 
+ .days li.sunday {
+    color: red;
+    font-weight: 600;
+    position: relative;
+    /* Add this line */
+}
+
+.days li.sunday::before {
+    content: "";
+    /* Add this line */
+    position: absolute;
+    /* Add this line */
+    width: 35px;
+    /* Adjust the size of the circle as needed */
+    height: 35px;
+   border: 2px solid crimson;
+    /* Adjust the color of the circle */
+    border-radius: 50%;
+    /* Makes it a circle */
+    top: 50%;
+    /* Positions it in the middle vertically */
+    left: 50%;
+    /* Positions it in the middle horizontally */
+    transform: translate(-50%, -50%);
+    /* Centers it relative to the parent element */
+}
+
+.days li.present::after {
+    background-color: #008000;
+}
+.days li.absent::after {
+    background-color: #FF0000;
+}
+
+.days li.weekoff::after {
+    background-color: #747272;
+}
+.days li.halfday::after {
+    background-color: rgb(0, 0, 0);
+}
+
+
+
+
+
+
+
+/* Custom CSS */
+.holiday-title {
+
+    font-family: 'Rubik';
+}
+
+.holiday-reason {
+
+    font-family: 'Rubik';
+}
+
+.holiday-cross {
+    display: block;
+    /* Show the default close button */
+}
+
+.holiday-container {
+    height: 10px;
+}

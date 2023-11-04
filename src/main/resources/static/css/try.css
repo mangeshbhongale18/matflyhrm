@@ -1,0 +1,65 @@
+/* Base Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif; /* Modern font for a professional look */
+  background-color: #f4f4f4; /* Neutral background to make calendar stand out */
+}
+
+/* Calendar Styles */
+.calendar {
+  width: 320px;
+  margin: 50px auto;
+  border: 1px solid #e1e1e1;
+  padding: 15px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Gentle shadow for depth */
+  border-radius: 8px; /* Rounded corners for a modern touch */
+}
+
+.calendar-header, .calendar-days, .calendar-dates {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px; /* Adjusted spacing */
+}
+
+.calendar-days div, .calendar-dates div {
+  flex: 1;  /* This allows for equal distribution within the container */
+  text-align: center;
+  padding: 5px 0; /* Vertical padding adjustment */
+}
+
+.calendar-days div {
+  font-weight: 600; /* Bold weekday names */
+  color: #555; /* Subtle color for weekdays */
+}
+
+.calendar-dates div {
+  height: 40px;
+  line-height: 40px;
+  border-radius: 4px; /* Rounded corners for dates */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition effects */
+}
+
+.calendar-dates div:hover {
+  background-color: #f8f8f8; 
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.today {
+  background-color: #f0f0f0;
+  border: 1px solid #333;
+  font-weight: 600;
+}
+
+.present {
+  background-color: #b8e0b8; /* Softer green */
+  font-weight: 600;
+}
+
+.absent {
+  background-color: #f2a8a8; /* Softer red */
+  font-weight: 600;
+}
